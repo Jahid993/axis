@@ -3,7 +3,7 @@
 /* Space between navbar  */
 
 
-.navbar-nav > li {
+.navbar-nav>li {
     padding-left: 20px;
     padding-right: 20px;
     margin-left: 20px;
@@ -12,7 +12,7 @@
 
 /* About us Section  */
 
-.section_title {} .section_subtitle{
+.section_title .section_subtitle {
 
     margin-bottom: 7px;
     padding-left: 7px;
@@ -25,7 +25,7 @@
     font-family: tahoma;
 }
 
-.section_main_tittle{
+.section_main_tittle {
     margin-top: 0;
     margin-bottom: 37px;
     font-size: 30px;
@@ -38,15 +38,15 @@
 }
 
 .about-box {
-    -webkit-box-shadow:0 0 0 10px #000000 inset;
-    box-shadow:0 0 0 10px #000000 inset;
+    -webkit-box-shadow: 0 0 0 10px #000000 inset;
+    box-shadow: 0 0 0 10px #000000 inset;
     margin: right 0;
     margin-top: 0;
     position: relative;
     display: block;
 }
 
-.box-overlay{
+.box-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -60,7 +60,7 @@
 
 }
 
-.about-box .videopopup img{
+.about-box .videopopup img {
     transform: translateY(30px) translateX(-30px);
     -webkit-transform: translateY(30px) translateX(-30px);
     width: 100%;
@@ -71,7 +71,7 @@
     position: absolute;
 }
 
-.sonar-wrapper{
+.sonar-wrapper {
     position: absolute;
     z-index: 9;
     top: 50%;
@@ -80,7 +80,7 @@
     margin-top: 20px;
 }
 
-.sonar-emitter{
+.sonar-emitter {
     position: absolute;
     margin: 0px auto;
     width: 30px;
@@ -89,7 +89,7 @@
     background-color: #bfa67a;
     text-align: center;
 }
- 
+
 .sonar-emitter i {
     z-index: 10;
     font-size: 20px;
@@ -98,7 +98,7 @@
     line-height: 32px;
 }
 
-.sonar-wave{
+.sonar-wave {
     position: absolute;
     top: 0;
     left: 0;
@@ -110,7 +110,7 @@
     pointer-events: none;
 }
 
-.sonar-wave{
+.sonar-wave {
 
     animation: sonarwave 2s linear infinite;
 }
@@ -127,7 +127,7 @@
     }
 }
 
-.btn-color-background{
+.btn-color-background {
     -moz-user-select: none;
     background-image: -webkit-linear-gradient(145deg, #faa61f 0%, #faa61f 0%, #ed1847 100%);
     border: 1px solid #bfa67a;
@@ -148,28 +148,29 @@
 
 
 /* About us  */
-.about-us{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        background-image: url(about/image-2.png);
-        background-size: cover;
-        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+.about-us {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(about/image-2.png);
+    background-size: cover;
+    @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 }
 
-.service_heading{
+.service_heading {
     text-transform: uppercase;
     position: relative;
     font-family: 'Lobster', cursive;
 }
 
-.service_pr{
+.service_pr {
     @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
     font-family: 'Lobster', cursive;
-    
+
 }
-.service_heading:after{
-    content:'' ;
+
+.service_heading:after {
+    content: '';
     position: absolute;
     top: 100%;
     left: 50%;
@@ -181,21 +182,86 @@
     box-shadow: 0 0 30px rgba(115, 128, 157, 0.3);
 }
 
-.service .wrap-service .img-hover{
-        transition: all 0.2s ease-in;
-}
-.service .wrap-service .img-hover:hover{
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform:scale(1.1)
+.service .wrap-service .img-hover {
+    transition: all 0.2s ease-in;
 }
 
-.service .wrap-service .uneven-box{
+.service .wrap-service .img-hover:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1)
+}
+
+.service .wrap-service .uneven-box {
     margin-top: 100px;
 }
 
- .service .btn-sm{
+.service .btn-sm {
     padding: 6px 14px;
     font-size: 16px;
     background: #188ef4;
- }
+}
+
+.sister-concern h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 50px;
+    background-image: url(sisterconcern/image-2);
+    background-size: cover;
+}
+
+.sister-concern body {
+    min-height: 200vh;
+    display: grid;
+    place-items: center;
+    background-color: #188ef4;
+}
+
+.container {
+    height: 300px;
+    margin: 0% 2% 0% 2%;
+    position: relative;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.slide-container {
+    display: flex;
+    width: calc(250px * 18);
+    animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-250px * 9));
+    }
+}
+
+.slide-image {
+    height: 250px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    perspective: 100px;
+}
+
+.slide-image img {
+    width: 100%;
+    transition: transform 1s;
+}
+
+img:hover {
+    transform: translateZ(20px);
+}
+
+.card-group{
+    margin: 1;
+    padding: 1;
+}
