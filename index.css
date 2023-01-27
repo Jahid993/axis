@@ -152,13 +152,22 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        background-image: url(about/image-2.png);
+        background-size: cover;
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 }
 
 .service_heading{
     text-transform: uppercase;
     position: relative;
+    font-family: 'Lobster', cursive;
 }
 
+.service_pr{
+    @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+    font-family: 'Lobster', cursive;
+    
+}
 .service_heading:after{
     content:'' ;
     position: absolute;
