@@ -260,7 +260,7 @@ img:hover {
     transform: translateZ(20px);
 }
 
-.card-group{
+.card-group {
     margin: 1;
     padding: 1;
 }
@@ -320,7 +320,7 @@ footer .email-id {
 
 footer hr {
     width: 90%;
-    border:0;
+    border: 0;
     border-bottom: 1px solid #ccc;
     margin: 20px auto;
 }
@@ -352,10 +352,11 @@ footer hr {
 }
 
 @keyframes moving {
-    0%{
+    0% {
         left: -20px;
     }
-    100%{
+
+    100% {
         left: 100%;
     }
 }
@@ -364,5 +365,5 @@ footer hr {
     footer.col {
         flex-basis: 100%;
     }
- 
+
 }
